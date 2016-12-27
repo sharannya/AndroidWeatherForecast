@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/layoutDailyWeather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_selector"
+            android:padding="@dimen/padding_list">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/component_padding"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="@dimen/component_padding"
+                android:paddingTop="@dimen/component_padding"
+                android:contentDescription="@string/icon_description"/>
+
+            <TextView
+                android:id="@+id/tv_time_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_location"
+                android:paddingBottom="@dimen/component_padding"
+                android:text="@string/time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_location"
+                android:layout_toLeftOf="@+id/icon"
+                android:layout_toRightOf="@id/tv_time_test"
+                android:paddingBottom="@dimen/component_padding"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_humidity_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_time"
+                android:paddingBottom="@dimen/component_padding"
+                android:text="@string/humidity"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_time"
+                android:layout_toLeftOf="@+id/icon"
+                android:layout_toRightOf="@id/tv_humidity_test"
+                android:paddingBottom="@dimen/component_padding"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_pressure_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_humidity"
+                android:paddingBottom="@dimen/component_padding"
+                android:text="@string/pressure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_humidity"
+                android:layout_toRightOf="@id/tv_pressure_text"
+                android:paddingBottom="@dimen/component_padding"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_currentDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_pressure"
+                android:layout_toLeftOf="@+id/tv_temperature"
+                android:paddingTop="@dimen/component_padding"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/icon"
+                android:paddingTop="@dimen/padding"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewHourlyWeather"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/horizontal_list_height"
+                android:background="@android:color/transparent"
+                android:alpha="0.5"
+                android:layout_below="@+id/tv_currentDesc"/>
+        </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewWeather"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="center"
+        style="@style/GenericProgressIndicator"/>
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="normal"
+        android:text="@string/no_data"
+        android:textSize="@dimen/notification_text_size"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
+</LinearLayout>

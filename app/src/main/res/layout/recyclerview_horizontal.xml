@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/horizontal_list_width"
+    android:layout_height="@dimen/horizontal_list_height"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tvHourlyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/notification_large_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+    <TextView
+        android:id="@+id/tvHourlyTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/notification_large_text"
+        android:paddingTop="@dimen/abc_button_padding_horizontal_material"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" />
+</RelativeLayout>

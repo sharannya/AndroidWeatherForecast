@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/component_padding"
+    android:paddingLeft="@dimen/padding_list"
+    android:paddingRight="@dimen/padding_list"
+    android:paddingTop="@dimen/component_padding">
+
+    <ImageView
+        android:id="@+id/climateIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/icon_description"/>
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="@dimen/notification_large_text"
+        android:paddingTop="@dimen/notification_large_text"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSunTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemp"
+        android:paddingBottom="@dimen/notification_large_text"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvSunTime"
+        android:paddingBottom="@dimen/notification_large_text"
+        android:textSize="@dimen/abc_text_size_caption_material"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvDesc"
+        android:background="@android:color/black" />
+</RelativeLayout>

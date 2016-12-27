@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="url">https://api.forecast.io/forecast/%1$s/%2$s,%3$s</string>
+    <string name="humidity">Humidity   :</string>
+    <string name="time">Local Time :</string>
+    <string name="pressure">Pressure   :</string>
+    <string name="no_internet">No Internet Connection.Please check your connection settings and try again.</string>
+    <string name="ok">OK</string>
+    <string name="location_null">Location is null</string>
+    <string name="no_data">Sorry.Weather information not available</string>
+    <string name="icon_description">Climate description</string>
+    <string name="percentage">&#37;</string>
+
+    <!--Error handling-->
+    <string name="error_retreiving_data">There was a error retreiving data.Please try again after some time.</string>
+    <string name="success_msg">WeatherForecast model received</string>
+    <string name="alert">Alert</string>
+
+    <!--Responses-->
+    <string name="permission_denied">Permission denied,error connecting to location services.</string>
+    <string name="location_service_denied">Google\'s location service disabled.Please enable</string>
+
+    <!--Formats-->
+    <string name="humidity_format" formatted="false">%1s %2s</string>
+    <string name="sunrise_sunset_format" formatted="false">Sunrise  :%1s\nSunset   :%2s</string>
+    <string name="daily_temp_format" formatted="false">&#x2191;%1s \u2103 &#x2193; %2s \u2103</string>
+    <string name="pressure_format" formatted="false">%1s hPa</string>
+    <string name="temp_format" formatted="false">%1s \u2103</string>
+    <string name="address_format" formatted="false">%1s,%2s\n%3s</string>
+    <string name="city_format" formatted="false">%1s\n%2s</string>
+</resources>

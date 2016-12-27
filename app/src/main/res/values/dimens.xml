@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="notification_large_text">5dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="component_padding">5dp</dimen>
+    <dimen name="padding_list">15dp</dimen>
+    <dimen name="horizontal_list_height">90dip</dimen>
+    <dimen name="horizontal_list_width">120dip</dimen>
+    <dimen name="notification_text_size">16sp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+</resources>
